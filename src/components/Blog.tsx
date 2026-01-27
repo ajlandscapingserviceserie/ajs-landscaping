@@ -67,7 +67,7 @@ const Blog = () => {
         {/* Instagram Feed Preview */}
         <div className="mt-20 text-center">
           <h3 className="text-3xl font-light text-gray-900 mb-8">
-            Find us on Facebook @AJ's Landscaping & Snow Removal
+            Find us on Instagram @AJ's Landscaping & Snow Removal
           </h3>
 
           <a

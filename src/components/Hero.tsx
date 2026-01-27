@@ -22,7 +22,7 @@ const Hero = () => {
       {/* Feature Image */}
       <div className="relative h-64 md:h-96 overflow-hidden mt-1">
         <img
-          src="https://ik.imagekit.io/nmcpzlghn/New%20Project.jpg"
+          src="https://ik.imagekit.io/nmcpzlghn/Hero-3.jpg?updatedAt=1769454910398"
           alt="Lawn Mowing"
           className="w-full h-full object-cover"
         />
