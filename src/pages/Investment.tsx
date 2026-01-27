@@ -1,97 +1,100 @@
 const Investment = () => {
   const packages = [
     {
-      title: "Showroom Shine",
-      location: "Full Detail",
-      price: "Starting at $25 per ft",
+      title: "Lawn Care",
+      location: "Mowing + Trim + Edge",
+      price: "Starting at $25 per visit",
       features: [
-        "Premium marine-grade products for a long-lasting, high-gloss finish",
-        "We don’t leave until your vessel looks its absolute best—satisfaction guaranteed",
+        "Consistent mowing with clean edges and a sharp, finished look",
+        "Trimming around fences, beds, and tight areas for a complete cut",
+        "Blow-off of walkways, driveways, and patios after every visit",
       ],
-      image: "https://ik.imagekit.io/tdwk7dqz1/Investment-4.jpg?updatedAt=1760364879663"
+      image: "https://ik.imagekit.io/nmcpzlghn/Service-1.jpg",
     },
     {
-      title: "Admiral Package",
-      location: "Full Detail + Weekly, Bi-weekly or Monthly visits",
-      price: "Starting at $12 per ft",
+      title: "Seasonal Care Subscription",
+      location: "Quarterly or Yearly Plan",
+      price: "Contact for Pricing",
       features: [
-        "Includes everything from the Showroom Shine package",
-        "Scheduled maintenance washes to keep your vessel spotless between full details",
-        "Light polishing and protection touch-ups at every visit",
-        "Ideal for boat owners who want consistent care all season long"
+        "Quarterly or yearly plans to keep your property maintained year-round",
+        "Includes lawn mowing, seasonal cleanups, and snow removal options",
+        "Priority scheduling during peak season and storms",
+        "Ideal for homeowners who want consistent care without the hassle",
       ],
-      image: "https://ik.imagekit.io/tdwk7dqz1/Investment-8.jpg?updatedAt=1760367582395"
+      image: "https://ik.imagekit.io/nmcpzlghn/subscriptions.jpg",
     },
     {
-      title: "Interior Clean",
-      location: "Entire Interior Cleaning",
-      price: "Starting at $10 per ft",
+      title: "Seasonal Cleanup",
+      location: "Spring / Fall Cleanups",
+      price: "Starting at $150",
       features: [
-        "Deep cleaning of all interior surfaces, vinyl, compartments, and upholstery",
-        "Mildew removal, odor elimination, and conditioning of soft surfaces",
-        "Windows, hatches, and interior detailing for a fresh, clean environment"
+        "Leaf, debris, and overgrowth removal to refresh your yard",
+        "Bed cleanup, light trimming, and haul-away included",
+        "Optional mulch refresh and edging for a crisp finish",
       ],
-      image: "https://ik.imagekit.io/tdwk7dqz1/Investment-5.jpg?updatedAt=1760365092674"
+      image: "https://ik.imagekit.io/nmcpzlghn/seasonal-cleanup-1.png",
     },
     {
-      title: "Exterior Clean",
-      location: "Full Exterior Clean",
-      price: "Starting at $15 per ft",
+      title: "Snow Removal",
+      location: "Driveways + Walkways",
+      price: "Starting at $60 per visit",
       features: [
-        "Full exterior wash with soap formulated for marine finishes",
-        "Salt, grime, and water spot removal with a protective wax finish",
-        "Metal, chrome, and glass polishing for a clean, reflective look"
+        "Reliable snow clearing for driveways, sidewalks, and entryways",
+        "Salting available for safer surfaces during ice conditions",
+        "Storm response with quick turnarounds and clear communication",
       ],
-      image: "https://ik.imagekit.io/tdwk7dqz1/Investment-7.jpg?updatedAt=1760367095477"
+      image: "https://ik.imagekit.io/nmcpzlghn/snowblowing-1.JPG",
     },
     {
-      title: "Gelcoat & Fiberglass Repair",
-      location: "Scratches, Holes, Cracks, Gelcoat Finish, ect.",
+      title: "Hardscaping Builds",
+      location: "Patios · Retaining Walls · Walkways · Fences",
       price: "Contact for a Free Estimate",
       features: [
-        "Professional gelcoat restoration and surface repair for chips, cracks, and oxidation",
-        "Color matching and high-gloss finishing to blend repairs seamlessly",
-        "Machine polishing and buffing to restore depth, clarity, and shine",
-        "Long-lasting protection with marine-grade sealants and coatings"
+        "Patios, pavers, walkways, and outdoor upgrades built to last",
+        "Retaining walls designed for strength, drainage, and curb appeal",
+        "Fences installed or repaired for privacy, safety, and clean lines",
+        "Built to handle Erie weather and seasonal freeze/thaw",
       ],
-      image: "https://ik.imagekit.io/tdwk7dqz1/Investment-6.jpg?updatedAt=1760366466962"
-    }
+      image: "https://ik.imagekit.io/nmcpzlghn/Hardscaping-1.png",
+    },
   ]
 
- /*const addOns = [
-     "xxxx (Regular $350)",
-    "xxxxx $250 With Package (Regular $350)"
-  ]*/
-
   const faqs = [
-     {
-      question: "How do I book a detailing appointment?",
-      answer: "You can book directly through our website, social media, or by calling or texting us. We’ll gather details about your vessel’s size, condition, and location to provide an accurate quote and schedule your service."
+    {
+      question: "How do I book a service appointment?",
+      answer:
+        "You can book through our website, social media, or by calling/texting us. We’ll gather details about your property, what you want done, and your address to provide an accurate quote and schedule.",
     },
     {
       question: "Do you come to my location?",
-      answer: "Yes! We’re a fully mobile detailing crew serving the Tampa Bay and Central Florida area. Whether your boat is docked, trailered, or in storage, we bring everything needed to get the job done on-site."
+      answer:
+        "Yes! We’re a local, on-site crew serving the Erie area. We bring the equipment needed to complete the job at your home, rental, or business.",
     },
     {
       question: "Are you insured?",
-      answer: "Absolutely. We’re fully insured and can provide proof of insurance upon request for marinas, yacht clubs, or private docks."
+      answer:
+        "Absolutely. We’re insured and can provide proof of insurance upon request.",
     },
     {
-      question: "How long does a full detail take?",
-      answer: "Timing depends on your boat’s size and condition. Most full details take between 4–8 hours. We’ll provide a clear estimate before starting and keep you updated throughout the process."
+      question: "How long does a typical job take?",
+      answer:
+        "Timing depends on the service and property size. Mowing and basic cleanups usually take a couple hours. Larger projects like hardscaping or tree work can take a day or more. We’ll provide a clear estimate before starting.",
     },
     {
-      question: "What products do you use?",
-      answer: "We only use professional-grade marine products designed for UV, saltwater, and oxidation protection. This ensures long-lasting results that keep your vessel protected and shining between services."
+      question: "What’s included in lawn mowing service?",
+      answer:
+        "Most mowing visits include mowing, trimming around obstacles, edging (if requested), and blowing off hard surfaces like driveways and sidewalks for a clean finish.",
     },
     {
-      question: "How do I maintain my boat after detailing?", 
-      answer: "We’ll give you simple maintenance tips to help extend the life of your detail. For consistent upkeep, we also offer our Admiral Package — monthly or bi-weekly washes that keep your boat looking its best year-round."
+      question: "Do you offer maintenance or subscription plans?",
+      answer:
+        "Yes. We offer quarterly or yearly property maintenance plans that can include lawn mowing, seasonal cleanups, and snow removal, so your property stays maintained year-round.",
     },
     {
-      question: "What payment methods do you accept?", 
-      answer: "We accept cash, credit cards, and digital payments like Zelle or Venmo. Payment is due upon completion unless you’re part of our Admiral maintenance plan."
-    }
+      question: "What payment methods do you accept?",
+      answer:
+        "We accept cash, credit cards, and digital payments like Zelle or Venmo. Payment is due upon completion unless it’s part of a scheduled plan.",
+    },
   ]
 
   return (
@@ -102,13 +105,13 @@ const Investment = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-8 leading-tight">
-                Our goal is to leave you fully satisfied with how your vessel looks and feels.
+                Our goal is to leave you fully satisfied with how your property looks and feels.
               </h1>
             </div>
             <div className="relative">
               <img
-                src="https://ik.imagekit.io/tdwk7dqz1/Investment-1.jpg?updatedAt=1760363920735"
-                alt="Romantic wedding photography"
+                src="https://ik.imagekit.io/nmcpzlghn/Flower-bed-2.jpg"
+                alt="Landscaping and property services"
                 className="w-full h-96 object-cover rounded-lg"
               />
             </div>
@@ -116,20 +119,20 @@ const Investment = () => {
         </div>
       </section>
 
-  
-
       {/* Description */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-1xl font-light text-gray-900 mb-8">
-            Precision-driven, results-focused detailing for boat owners who value craftsmanship, care, and lasting protection.
+          <h2 className="text-xl font-light text-gray-900 mb-8">
+            Precision driven, results-focused property services for homeowners who value craftsmanship, clean lines, and work that lasts.
           </h2>
           <div className="space-y-6 text-gray-700 leading-relaxed">
             <p>
-              The beauty of what we do is in the details, bringing life back to every surface and restoring the pride that comes with owning a clean, well-kept vessel. We treat every boat as if it were our own, using proven techniques and professional-grade products to achieve a flawless, long-lasting finish.
+              The quality of what we do is in the details such as clean edges, finished surfaces, and a property that looks sharp when we’re done.
+              We treat every yard and build like it’s our own, using the right equipment and proven methods to deliver consistent results.
             </p>
             <p>
-              From heavy oxidation removal to ceramic coating and interior deep cleaning, our goal is simple: deliver unmatched results that turn heads at the dock and keep your investment protected all year long.
+              From seasonal cleanups and weekly mowing to hardscaping builds and snow removal, our goal is simple: keep your property looking great,
+              staying safe, and holding up through every Erie season.
             </p>
           </div>
         </div>
@@ -140,15 +143,24 @@ const Investment = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20">
             {packages.map((pkg, index) => (
-              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
+              <div
+                key={index}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${
+                  index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
+                }`}
+              >
+                <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
                   <div className="bg-gray-900 text-white p-8 rounded-lg">
                     <h3 className="text-3xl font-light mb-4">{pkg.title}</h3>
-                    <p className="text-sm uppercase tracking-wide text-gray-300 mb-6">{pkg.location}</p>
+                    <p className="text-sm uppercase tracking-wide text-gray-300 mb-6">
+                      {pkg.location}
+                    </p>
 
                     <ul className="space-y-3 mb-8">
                       {pkg.features.map((feature, idx) => (
-                        <li key={idx} className="text-gray-200">{feature}</li>
+                        <li key={idx} className="text-gray-200">
+                          {feature}
+                        </li>
                       ))}
                     </ul>
 
@@ -160,7 +172,11 @@ const Investment = () => {
                   </div>
                 </div>
 
-                <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
+                <div
+                  className={
+                    index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""
+                  }
+                >
                   <img
                     src={pkg.image}
                     alt={pkg.title}
@@ -186,9 +202,7 @@ const Investment = () => {
                 <h3 className="text-xl font-medium text-gray-900 mb-4">
                   {faq.question}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {faq.answer}
-                </p>
+                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -199,27 +213,29 @@ const Investment = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-light text-gray-900 mb-8 uppercase tracking-wide">
-            QUALITY, CRAFTSMANSHIP, AND PROTECTION - IN EVERY DETAIL
+            QUALITY, CRAFTSMANSHIP, AND RESULTS — ON EVERY JOB
           </h2>
 
           <div className="space-y-6 text-gray-700 leading-relaxed mb-12">
             <p>
-              We believe every vessel deserves more than a quick wash. That’s why we focus on professional-grade results that restore, protect, and enhance your boat inside and out. From full gel coat restoration and fiberglass repair to interior deep cleaning, polishing, and ceramic coating, every step is done with precision and care.
+              We believe your property deserves more than rushed work and shortcuts. That’s why we focus on professional results that improve your home’s
+              curb appeal, function, and safety whether it’s lawn care, seasonal cleanups, snow removal, or hardscaping builds.
             </p>
             <p>
-              Our mission is simple: preserve your boat’s beauty, extend its life, and keep it water-ready all year long. We treat every project like it’s our own, ensuring a lasting shine and protection you can trust.
+              Our goal is simple: keep your property looking great and built to last through every Erie season. We treat every job like it’s our own,
+              with clear communication, clean finishes, and work you can trust.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mb-12">
             <img
-              src="https://ik.imagekit.io/tdwk7dqz1/Investment-3.jpg?updatedAt=1760364627952"
-              alt="Wedding transparency"
+              src="https://ik.imagekit.io/nmcpzlghn/Flower-bed-1.JPG"
+              alt="Landscaping work example"
               className="w-full h-64 object-cover"
             />
             <img
-              src="https://ik.imagekit.io/tdwk7dqz1/Investment-2.jpg?updatedAt=1760364628032"
-              alt="Documentary wedding photography"
+              src="https://ik.imagekit.io/nmcpzlghn/Flower-bed-3.JPG"
+              alt="Landscaping work example 2"
               className="w-full h-64 object-cover"
             />
           </div>

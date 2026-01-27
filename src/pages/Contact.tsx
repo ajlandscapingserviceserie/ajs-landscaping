@@ -6,12 +6,10 @@ const Contact = () => {
     email: '',
     phone: '',
     heardAbout: '',
-    inquiryType: '',
-    instagram: '',
-    weddingDate: '',
-    ceremonyReceptionLocation: '',
-    guestCount: '',
-    Additional:''
+    contactMethod:'',
+    timelineInquiry: '',
+    budgetInquiry: '',
+    OtherDetails: ''
   })
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -25,7 +23,7 @@ const Contact = () => {
   e.preventDefault()
 
   try {
-    const response = await fetch('https://formspree.io/f/xyzjrjnn', {
+    const response = await fetch('https://formspree.io/f/mzzjykdj', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -40,12 +38,10 @@ const Contact = () => {
         email: '',
         phone: '',
         heardAbout: '',
-        inquiryType: '',
-        instagram: '',
-        weddingDate: '',
-        ceremonyReceptionLocation: '',
-        guestCount: '',
-        Additional:''
+        contactMethod: '',
+        timelineInquiry: '',
+        budgetInquiry: '',
+        OtherDetails: ''
       })
     } else {
       alert('Something went wrong. Please try again later.')
@@ -64,14 +60,16 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h1 className="text-3xl md:text-5xl font-light text-gray-900 mb-8 leading-tight">
-                We’re here to give your boat more than just a basic wash
+                We’re here to give your property more than just a quick mow
               </h1>
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  Before you schedule with us, we want you to understand the value behind what we do. Boat detailing isn’t just about making things look clean, it’s about preserving what you’ve worked hard for. Every polish, every restoration, every coat of protection is done with care and precision to keep your vessel in peak condition.
+                 Before you schedule with us, we want you to understand the value behind what we do. Property work isn’t just about making things look clean, it’s about protecting 
+                 what you’ve worked hard for. Every cleanup, every cut, every build, and every finishing detail is done with care and precision to keep your home looking sharp and holding up through the seasons.
                 </p>
                 <p>
-                  We take pride in doing things the right way, the first time. When you see your reflection in that mirror finish, it’s not just shine, it’s craftsmanship, protection, and pride that lasts long after we pack up.
+                  We take pride in doing things the right way, the first time. When you see those clean edges, crisp lines, and a finished look that lasts, it’s not just curb appeal, it’s craftsmanship, durability,
+                   and pride that stays long after we pack up.
                 </p>
               </div>
 
@@ -80,15 +78,15 @@ const Contact = () => {
             <div className="grid grid-cols-2 gap-1">
               <div className="relative h-100 overflow-hidden">
                 <img
-                  src="https://ik.imagekit.io/tdwk7dqz1/Contact-1.JPG?updatedAt=1760327821056"
-                  alt="Castle wedding photography"
+                  src="https://ik.imagekit.io/nmcpzlghn/Contact-1.png"
+                  alt="patio 1"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative h-100 overflow-hidden">
                 <img
-                  src="https://ik.imagekit.io/tdwk7dqz1/Contact-2.JPG?updatedAt=1760328014957"
-                  alt="Beach engagement session"
+                  src="https://ik.imagekit.io/nmcpzlghn/Contact-2%20(2).png"
+                  alt="patio 2"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -153,6 +151,41 @@ const Contact = () => {
                 />
               </div>
 
+              <div>
+                <label htmlFor="names" className="block text-sm font-medium text-gray-700 mb-2">
+                  Service Address (Street, City, ZIP) *
+                </label>
+                <input
+                  type="text"
+                  id="names"
+                  name="names"
+                  value={formData.names}
+                  onChange={handleInputChange}
+                  placeholder="Your name"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
+                  required
+                />
+              </div>
+
+                {/* Preffered contact method */}
+              <div>
+                <label htmlFor="heardAbout" className="block text-sm font-medium text-gray-700 mb-2">
+                  How should we contact you?
+                </label>
+                <select
+                  id="contactMethod"
+                  name="contactMethod"
+                  value={formData.heardAbout}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
+                >
+                  <option value="">Select an option</option>
+                  <option value="google">Phone Call</option>
+                  <option value="instagram">Text Message</option>
+                  <option value="referral">Email</option>
+                </select>
+              </div>
+
               {/* How did you hear about me */}
               <div>
                 <label htmlFor="heardAbout" className="block text-sm font-medium text-gray-700 mb-2">
@@ -169,58 +202,85 @@ const Contact = () => {
                   <option value="google">Google Search</option>
                   <option value="instagram">Instagram</option>
                   <option value="referral">Facebook</option>
-                  <option value="vendor">TikTok</option>
                   <option value="other">Other</option>
                 </select>
               </div>
 
               {/* What are you inquiring about */}
-              <div className="md:col-span-2">
-                <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-700 mb-2">
+              <div>
+                <label htmlFor="budgetInquiry" className="block text-sm font-medium text-gray-700 mb-2">
                   What are you inquiring about? *
                 </label>
                 <select
-                  id="inquiryType"
-                  name="inquiryType"
-                  value={formData.inquiryType}
+                  id="budgetInquiry"
+                  name="budgetInquiry"
+                  value={formData.budgetInquiry}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
                   required
                 >
                   <option value="">Select an option</option>
-                  <option value="wedding">Admirals Club Subscription</option>
-                  <option value="elopement">Full Detail</option>
-                  <option value="engagement">Gel Coat Restoration</option>
-                  <option value="couples">Oxidation Removal</option>
-                  <option value="couples">Interior Clean</option>
+                  <option value="seasonalPropertyCareSubscription">Seasonal Property Care Subscription</option>
+                  <option value="lawncare">Lawn Care</option>
+                  <option value="cleanup">Seasonal Cleanup</option>
+                  <option value="hardscaping">Hardscaping</option>
+                  <option value="treeremoval">Tree Removal</option>
                   <option value="other">Other</option>
                 </select>
               </div>
 
-              {/* Guest Count */}
-              <div className="md:col-span-2">
-                <label htmlFor="guestCount" className="block text-sm font-medium text-gray-700 mb-2">
-                  Boat Type (Make & Model)
+              {/* Timeline */}
+              <div>
+                <label htmlFor="timelineInquiry" className="block text-sm font-medium text-gray-700 mb-2">
+                  When would you like service to start? *
                 </label>
-                <input
-                  type="text"
-                  id="guestCount"
-                  name="guestCount"
-                  value={formData.guestCount}
+                <select
+                  id="timelineInquiry"
+                  name="timelineInquiry"
+                  value={formData.budgetInquiry}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
-                />
+                  required
+                >
+                  <option value="">Select an option</option>
+                  <option value="ASAP">ASAP</option>
+                  <option value="1week">Within 1 Week</option>
+                  <option value="1month">Within 1 Month</option>
+                  <option value="other">Just Researching</option>
+                </select>
               </div>
 
-              {/* Ceremony + Reception locations */}
+              {/* Budget*/}
               <div className="md:col-span-2">
-                <label htmlFor="ceremonyReceptionLocation" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="budgetInquiry" className="block text-sm font-medium text-gray-700 mb-2">
+                  What is your estimated budget?
+                </label>
+                <select
+                  id="budgetInquiry"
+                  name="budgetInquiry"
+                  value={formData.budgetInquiry}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
+                  required
+                >
+                  <option value="">Select an option</option>
+                  <option value="budget1">Under $250</option>
+                  <option value="budget2">$250-$500</option>
+                  <option value="budget3">$500-$1,000</option>
+                  <option value="budget4">$1,000+</option>
+                  <option value="other">Not Sure Yet</option>
+                </select>
+              </div>
+
+              {/* Other Details*/}
+              <div className="md:col-span-2">
+                <label htmlFor="OtherDetails" className="block text-sm font-medium text-gray-700 mb-2">
                   Other Details
                 </label>
                 <textarea
-                  id="ceremonyReceptionLocation"
-                  name="ceremonyReceptionLocation"
-                  value={formData.ceremonyReceptionLocation}
+                  id="OtherDetails"
+                  name="OtherDetails"
+                  value={formData.OtherDetails}
                   onChange={handleInputChange}
                   rows={3}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"

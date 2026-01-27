@@ -5,21 +5,21 @@ const About = () => {
 
   const blogPosts = [
     {
-      title: "Admiral’s Choice Subscription",
-      excerpt: "Keep your boat looking showroom-ready all year long. Our detailing subscription offers bi-weekly, monthly or quarterly visits to clean, protect, and maintain your vessel, so it always shines like new.",
-      image: "https://ik.imagekit.io/tdwk7dqz1/Blog-1.png?updatedAt=1760295134255",
-      href: "/blog/Admirals-Choice-Subscription"
+      title: "Seasonal Property Care Subscription",
+      excerpt: "Keep your property clean, maintained, and ready for every season. Our quarterly or yearly subscription includes routine lawn mowing, seasonal cleanups, and snow removal, so your yard stays sharp in summer and your driveway stays safe in winter.",
+      image: "https://ik.imagekit.io/nmcpzlghn/Subscription_pack.jpg",
+      href: "/blog/seasonal-property-care-subscription"
     },
     {
-      title: "What You Get with a Full Detail",
-      excerpt: "A complete overview of our Full Detail service—what’s included, the quality you can expect, and the professional care that keeps your vessel looking its best.",
-      image: "https://ik.imagekit.io/tdwk7dqz1/Blog-2.jpg?updatedAt=1760296186461",
+      title: "Best Plants for Erie’s Seasons",
+      excerpt: "A practical guide to the best trees, shrubs, perennials, and native plants that thrive in Erie’s weather, plus what to plant each season for color, durability, and low maintenance.",
+      image: "https://ik.imagekit.io/nmcpzlghn/Best-Plants.jpg?updatedAt=1769472950532",
       href: "/blog/full-detail-description"
     },
     {
       title: "Check Out Our Previous Work",
-      excerpt: "From full gel coat restorations to interior cleanings, every project reflects our commitment to precision and lasting quality. See why Tampa Bay boaters trust us to bring their vessels back to life.",
-      image: "https://ik.imagekit.io/tdwk7dqz1/Blog-3.jpg?updatedAt=1760295544043",
+      excerpt: "From cleanups and fresh mulch installs to patios, retaining walls, and snow removal, every project reflects our commitment to clean results and lasting quality. See why Erie homeowners trust us to level up their property.",
+      image: "https://ik.imagekit.io/nmcpzlghn/Photo_1-1.png?updatedAt=1769461642659",
       href: "/portfolio"
     }
   ]
@@ -40,15 +40,15 @@ const About = () => {
 
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  Fueled by early mornings, high expectations, and the satisfaction of a mirror-finish hull, we take pride in turning hard work into lasting results. One of us is always fine-tuning the buffing process, while the other spends hours perfecting every inch of the interior.
+                  Fueled by early mornings, high expectations, and the satisfaction of a clean, finished property, we take pride in turning hard work into results you can actually see. One of us is focused on clean lines and detail work such as edging, beds, and final touches, while the other keeps the heavy work moving: hauling, grading, and getting the job done right.
                 </p>
 
                 <p>
-                  When we’re not on the water, you’ll find us repairing gel coat, restoring shine, or wrenching on our car projects. We believe in doing things the right way every time because that’s what earns trust and sets true craftsmanship apart.
+                  When we’re not on-site, you’ll find us planning the next build, repairing our equipment, or working on projects that keep our standards high. We believe in doing things the right way every time, because that’s what earns trust and sets real craftsmanship apart.
                 </p>
 
                 <p>
-                 At the end of the day, this isn’t just about cleaning boats, it’s about pride, precision, and keeping every vessel we touch looking its absolute best.
+                 At the end of the day, this isn’t just about cutting grass or moving stone, it’s about pride, precision, and leaving every property we touch looking its absolute best.
                 </p>
               </div>
 
@@ -67,16 +67,8 @@ const About = () => {
                 HI, WE ARE
               </h1>
 
-              <div className="relative mb-8">
-                <img
-                  src="https://ik.imagekit.io/tdwk7dqz1/About-2.jpg?updatedAt=1760486552993"
-                  alt="Gorban Pixels photographers"
-                  className="w-full max-w-md mx-auto h-96 object-cover rounded-lg"
-                />
-              </div>
-
               <h2 className="text-6xl md:text-8xl font-light text-gray-900 mb-4">
-                PREMIER
+                AJ's Landscaping Services
               </h2>
             </div>
           </div>
@@ -89,8 +81,8 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <img
-                src="https://ik.imagekit.io/tdwk7dqz1/About-4.jpg?updatedAt=1760487607140"
-                alt="Documentary wedding photographer at work"
+                src="https://ik.imagekit.io/nmcpzlghn/Abouts-1.png?updatedAt=1769477921196"
+                alt="The truck in field"
                 className="w-full h-96 object-cover rounded-lg"
               />
             </div>
@@ -102,13 +94,13 @@ const About = () => {
 
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  We didn’t set out knowing this would become our life’s work but looking back, it’s clear everything led us here. What started as a weekend project and a love for the water turned into a passion for craftsmanship, restoration, and bringing boats back to life.
+                  We didn’t set out knowing this would become our life’s work, but looking back, it’s clear everything led us here. What started as weekend projects and helping friends and family turned into a passion for building, improving, and maintaining properties the right way.
                 </p>
                 <p>
-                  As a two-man crew, we know what it means to build something from the ground up to show up every day, work hard, and take pride in the details that others might overlook. Detailing isn’t just what we do; it’s how we express our dedication, precision, and respect for the craft.
+                  We know what it means to build something from the ground up, to show up every day, work hard, and take pride in the details other crews overlook. Landscaping and outdoor work isn’t just what we do; it’s how we show dedication, precision, and respect for the craft.
                 </p>
                 <p>
-                  We do this because we care deeply about every vessel we touch, and we’re honored to help boat owners protect what they love most with one flawless finish at a time.
+                  We do this because we genuinely care about every property we work on, and we’re honored to help homeowners protect and improve what they’ve invested in one clean finish and solid build at a time.
                 </p>
               </div>
             </div>
@@ -120,7 +112,7 @@ const About = () => {
       <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-lg font-medium text-gray-900 mb-4 uppercase tracking-wide">
-           From small crafts to luxury vessels, we’ve mastered the art of bringing boats back to life. Every detail we touch reflects years of hands-on expertise and dedication. <br /> Our goal is simple - to build lasting trust through consistency, craftsmanship, and results that exceed expectations every time.
+           From quick cleanups to full outdoor transformations, we’ve mastered the art of making properties look their best. Every detail we touch reflects hands-on experience and pride in the work. <br /> Our goal is simple — to build lasting trust through consistency, craftsmanship, and results that exceed expectations every time.
           </h3>
         </div>
       </section>
@@ -145,15 +137,13 @@ const About = () => {
 
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p >
-                  Artem’s at home anywhere there’s motion and adrenaline. Whether it’s racing his motorcycle down the coast, heading out to fish, or working on new gear, he brings the same focus and precision to every project that he brings to every detail job.
+                  Alex’s world revolves around the outdoors with early mornings, hard work, and time on the water. When he’s not fishing or
+                  riding his jet ski, he’s hands-on with yard work and equipment, always improving, fixing, and building.
                 </p>
+
 
                 <p>
-                  Andray’s world revolves around the water—fishing, paddleboarding, kiteboarding, or tuning up his jet skis. When he’s not out on the bay, he’s probably building, fixing, or improving something just because he can. He’s all about hard work, craftsmanship, and getting it right the first time.
-                </p>
-
-                <p >
-                  Our team brings the same energy, precision, and efficiency to every job—getting your boat water ready in no time, with quality that speaks for itself.
+                   That same drive shows up in every job we take on. From landscaping and hardscaping to tree removal and snow removal, we keep it simple: show up, communicate clearly, and leave your property clean, safe, and looking sharp, season after season.
                 </p>
               </div>
 

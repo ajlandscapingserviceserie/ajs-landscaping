@@ -1,21 +1,21 @@
 const Blog = () => {
   const blogPosts = [
     {
-      title: "Admiral’s Choice Subscription",
-      excerpt: "Keep your boat looking showroom ready all year long. Our detailing subscription offers bi-weekly, monthly, quarterly visits to clean, protect, and maintain your vessel, so it always shines like new.",
-      image: "https://ik.imagekit.io/tdwk7dqz1/Blog-1.png?updatedAt=1760295134255",
-      href: "/blog/Admirals-Choice-Subscription"
+      title: "Seasonal Property Care Subscription",
+      excerpt: "Keep your property clean, maintained, and ready for every season. Our quarterly or yearly subscription includes routine lawn mowing, seasonal cleanups, and snow removal—so your yard stays sharp in summer and your driveway stays safe in winter.",
+      image: "https://ik.imagekit.io/nmcpzlghn/Subscription_pack.jpg",
+      href: "/blog/seasonal-property-care-subscription"
     },
     {
-      title: "What You Get with a Full Detail",
-      excerpt: "A complete overview of our Full Detail service and what’s included; the quality you can expect, and the professional care that keeps your vessel looking its best.",
-      image: "https://ik.imagekit.io/tdwk7dqz1/Blog-2.jpg?updatedAt=1760296186461",
+      title: "Best Plants for Erie’s Seasons",
+      excerpt: "A practical guide to the best trees, shrubs, perennials, and native plants that thrive in Erie’s weather—plus what to plant each season for color, durability, and low maintenance.",
+      image: "https://ik.imagekit.io/nmcpzlghn/Best-Plants.jpg?updatedAt=1769472950532",
       href: "/blog/full-detail-description"
     },
     {
       title: "Check Out Our Previous Work",
-      excerpt: "From full gel coat restorations to interior cleanings, every project reflects our commitment to precision and lasting quality. See why Tampa Bay boaters trust us to bring their vessels back to life.",
-      image: "https://ik.imagekit.io/tdwk7dqz1/Blog-3.jpg?updatedAt=1760295544043",
+      excerpt: "From cleanups and fresh mulch installs to patios, retaining walls, and snow removal—every project reflects our commitment to clean results and lasting quality. See why Erie homeowners trust us to level up their property.",
+      image: "https://ik.imagekit.io/nmcpzlghn/Photo_1-1.png?updatedAt=1769461642659",
       href: "/portfolio"
     }
   ]
@@ -26,11 +26,11 @@ const Blog = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">
-            Detailing Resources & Packages Offered
+            Landsacping Resources & Packages Offered 
           </h2>
           <p className="text-xl text-gray-700">
-             We’re dedicated to helping Tampa Bay boat owners protect, restore, and maintain their vessels.<br />
-            Below you’ll find helpful guides, and package insights on our services.
+            We’re dedicated to helping Erie property owners improve, protect, and maintain their homes year-round.<br />
+            Below you’ll find helpful guides, seasonal tips, and package details for our services.
           </p>
         </div>
 
@@ -67,11 +67,11 @@ const Blog = () => {
         {/* Instagram Feed Preview */}
         <div className="mt-20 text-center">
           <h3 className="text-3xl font-light text-gray-900 mb-8">
-            Find us on Instagram @premierboatdetailing
+            Find us on Facebook @AJ's Landscaping & Snow Removal
           </h3>
 
           <a
-            href="https://www.instagram.com/premierboatdetailing/"
+            href="https://www.facebook.com/people/AJs-Landscaping-Snow-Removal-Erie/61584486336615/#"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-900 text-white px-8 py-3 text-sm font-medium uppercase tracking-wide hover:bg-gray-800 transition-colors mb-10"
@@ -82,16 +82,15 @@ const Blog = () => {
         </div>
 
 {/* Instagram Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-1 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-1 mb-8">
             {[
-              "https://ik.imagekit.io/tdwk7dqz1/Banner-1.jpg?updatedAt=1760319870384",
-              "https://ik.imagekit.io/tdwk7dqz1/Banner-2.jpg?updatedAt=1760319870752",
-              "https://ik.imagekit.io/tdwk7dqz1/Banner-3.jpg?updatedAt=1760319870737",
-              "https://ik.imagekit.io/tdwk7dqz1/Banner-4.jpg?updatedAt=1760319870678",
-              "https://ik.imagekit.io/tdwk7dqz1/Banner-5.jpg?updatedAt=1760319870559"
+              "https://ik.imagekit.io/nmcpzlghn/Photo_1-2.png",
+              "https://ik.imagekit.io/nmcpzlghn/photo_1-4.png",
+              "https://ik.imagekit.io/nmcpzlghn/photo_1-5.png",
+              "https://ik.imagekit.io/nmcpzlghn/photo_1-3.png"
             ].map((image, index) => (
               <div key={index} className="relative h-48 overflow-hidden">
-                <a href="https://instagram.com/gorbanpixels" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/people/AJs-Landscaping-Snow-Removal-Erie/61584486336615/#" target="_blank" rel="noopener noreferrer">
                   <img
                     src={image}
                     alt={`Instagram post ${index + 1}`}
@@ -111,7 +110,7 @@ const Blog = () => {
           
 
           <a
-            href="https://www.facebook.com/profile.php?id=61581825377055"
+            href="https://www.facebook.com/people/AJs-Landscaping-Snow-Removal-Erie/61584486336615/#"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-900 text-white px-8 py-3 text-sm font-medium uppercase tracking-wide hover:bg-gray-800 transition-colors"

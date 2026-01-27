@@ -7,7 +7,7 @@ import Contact from './pages/Contact'
 import Investment from './pages/Investment'
 import Portfolio from './pages/Portfolio'
 import FullDetailDescription from './pages/FullDetailDescription'
-import AdmiralsChoiceSubscription from './pages/AdmiralsChoiceSubscription'
+import SeasonalProperyCareSubscription from './pages/SeasonalProperyCareSubscription'
 
 
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/investment" element={<Investment />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog/full-detail-description" element={<FullDetailDescription />} />
-          <Route path="/blog/Admirals-Choice-Subscription" element={<AdmiralsChoiceSubscription />} />
+          <Route path="/blog/seasonal-property-care-subscription" element={<SeasonalProperyCareSubscription />} />
         </Routes>
         <Footer />
       </div>
