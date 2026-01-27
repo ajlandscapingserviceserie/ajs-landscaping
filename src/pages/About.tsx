@@ -81,7 +81,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <img
-                src="https://ik.imagekit.io/nmcpzlghn/Abouts-1.png?updatedAt=1769477921196"
+                src="https://ik.imagekit.io/nmcpzlghn/Abouts-1.jpg"
                 alt="The truck in field"
                 className="w-full h-96 object-cover rounded-lg"
               />
