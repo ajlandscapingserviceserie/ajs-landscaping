@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Blog = () => {
   const blogPosts = [
     {
@@ -53,12 +54,12 @@ const Blog = () => {
                 <p className="text-gray-700 mb-4 line-clamp-3">
                   {post.excerpt}
                 </p>
-                <a
-                  href={post.href}
+                <Link
+                  to={post.href}
                   className="inline-block text-gray-900 font-medium hover:text-gray-700 transition-colors"
                 >
                   Read More →
-                </a>
+              </Link>
               </div>
             </article>
           ))}
